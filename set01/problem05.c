@@ -40,8 +40,8 @@ void output(int a, int b, int c, int largest){
   else if (largest == c){
     printf("The largest of %d, %d and %d is %d\n", a, b, c, largest);
   }
-  else
+ else
   {
     printf("sorry, wrong input try again.\n");
-  }
+    }
 }
