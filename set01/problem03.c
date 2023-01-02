@@ -13,7 +13,7 @@ int main(){
 int input(){
   int a;
   scanf("%d", &a);
-  return a;
+  return a ;
 }
 int add(int a, int b){
   int sum;
