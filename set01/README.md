@@ -48,7 +48,7 @@ void output(int a, int b, int sum);
 ```
 1
 2
-```
+```  
 
 ***Output***
 
