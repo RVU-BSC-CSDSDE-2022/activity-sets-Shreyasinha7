@@ -1,37 +1,29 @@
 #include<stdio.h>
 int input();
-int compare(int a, int b, int c);
-void output(int a, int b, int c, int largest);
+void add(int a,int b,int *sum);
+void output(int a,int b,int sum);
 
 int input()
 {
-  int n;
-  printf("Enter a number\n");
-  scanf("%d", &n);
+   int n;
+printf("enterthe number:");
+scanf("%d",&n);
   return n;
 }
-int compare(int a, int b , int c)
+void add(int a, int b,int *sum)
 {
-  if (a>b && a>c){
-    return a;
+ *sum=a+b;
   }
-  else if (b > a && b > c){
-    return b;
-  }
-  else if (c > a && c > b){
-    return c;
-  }
-  
+void output(int a,int b,int sum)
+{
+  printf("addition of %d and %d is %d\n",a,b,sum);
 }
-void output(int a, int b , int c , int largest){
-  printf("The largest of %d, %d and %d is %d\n", a, b, c, largest);
-}
-int main(){
-  int a, b, c,largest;
-  a = input();
-  b = input();
-  c = input();
-  largest=compare(a,b,c);
-  output(a, b, c, largest);
+int main()
+{
+  int a,b,sum;
+  a=input();
+  b=input();
+  add(a,b,&sum);
+  output(a,b,sum);
   return 0;
-}
+  }
