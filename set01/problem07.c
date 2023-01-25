@@ -23,7 +23,7 @@ int sum_n_nos( int n)
 void output(int n, int sum)
 {
   printf("the sum of first %d natural numbers is %d",n,sum);
-}
+  }
 int main()
 {
   int n,i,sum;
