@@ -1,6 +1,6 @@
 #include<stdio.h>
 int input();
-void compare(int a,int b, int c,int largest);
+void compare(int a,int b, int c,int *largest);
 int input()
 {
   int n;
@@ -8,8 +8,7 @@ int input()
   scanf("%d",&n);
   return n;
 }
-void compare(int a,int b,int c,int
-*largest)
+void compare(int a,int b, int c,int *largest)
 {
   *largest=a;
   if(b>*largest)
