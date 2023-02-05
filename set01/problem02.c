@@ -2,9 +2,9 @@
 int main()
 {
 int a,b,add;
-printf("enter the numbers:");
-scanf("%d%d",&a,&b);
+printf("enter the numbers:\n");
+scanf("%d%d", &a,&b);
 add=a+b;
-printf("the addition of number is %d",add);
+printf("the addition of two numbers is %d",add);
 return add;
 }
