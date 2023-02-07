@@ -5,15 +5,17 @@ int add(int a, int b) {
    return result;
 }
 
-int main() {
+int main() 
+{
    int a,b,sum;
 
    printf("Enter two numbers: ");
    scanf("%d%d", &a, &b);
 
-   // Call the addNumbers function
+   // Call the add function
    sum = add(a,b);
 
-   printf("the sum of %d and %d is %d", a,b,sum);
+   printf("the sum of %d and %d is %d" ,a,b,sum);   
+  //we can write "%d + %d = %d" ,a,b,sum//
    return 0;
 }
