@@ -46,9 +46,13 @@ t[i]=input_triangle();
 }
 void find_area(Triangle *t)
 {
+t->area=((t->base)*(t->altitude))*0.5;
+}
+void find_n_areas(int n, Triangle i[n])
+{
 for(int i=0; i<n; i++)
 {
-find_area(&t[i]);
+find_area( &t[i]);
 }
 }
 Triangle find_smallest_triangle(int n, Triangle t[n])
