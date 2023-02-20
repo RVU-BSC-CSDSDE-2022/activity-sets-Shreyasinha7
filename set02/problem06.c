@@ -2,32 +2,33 @@
 void input_string(char *a);
 void str_reverse(char *str, char *rev_str);
 void output(char *a, char *reverse_a);
-void input_string(char*a)
-{
-printf("enter the string:");
-scanf("%s",a);
-}
-void str_reverse(char *str , char *rev_str)
-{
-int i=0, j=0,len;
-for(i=0;str[i]!='\0';i++);
-len=i--;
-for(i=len-1;i>=0;i--)
-{
-rev_str[j]=str[i];
-j++;
-}
-}
-void output(char*a, char*reverse_a)
-{
-int b;
-printf("the reverse of the string is %s",reverse_a);
-}
 int main()
 {
-char a[10],b[10];
-input_string(a);
-str_reverse(a,b);
-output(a,b);
-return(0);
+char string[50];
+input_string(&string);
+int k;
+for (k=0;string[k]!='\0';k++)
+{}
+char reversed_string[k-1];
+str_reverse(string,reversed_string);
+output(string,reversed_string);
+return 0;
+}
+void input_string(char *a)
+{
+printf("Enter the String\n");
+scanf("%s",a);
+}
+void str_reverse(char *str, char *rev_str)
+{
+int i,j;
+for (j=0;str[j]!='\0';j++)
+{}
+for (i=0;rev_str[i]=str[j-1-i];i++,j--)
+}
+rev_str[i]='\0';
+}
+void output(char *a, char *reverse_a)
+{
+printf("The Reverse of the Entered String %s is %s\n",a,reverse_a);
 }

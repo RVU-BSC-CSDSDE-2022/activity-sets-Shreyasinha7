@@ -7,21 +7,28 @@ int input_side()
 int n;
 printf("enter the number:");
 scanf("%d",&n);
-return  n;
+return n;
 }
-int check_scalene(int a , int b , int c)
+int check_scalene(int a, int b, int c)
 {
-int isscalene;
-if(a!=b && b!=c)
-printf("the given triangle is isscalene\n");
+int isscalene=0;
+if(a!=b && b!=c&&c!=a)
+isscalene=1;
+return isscalene;
 }
 void output(int a, int b, int c, int isscalene)
 {
-printf("the given side of triangle %d , %d and %d is scalene",a,b,c,isscalene);
-}
+if(isscalene==1)
+printf("the given side of triangle %d, %d and %d is scalene",a,b,c,isscalene);
+else
+{
+
+}}
+
+
 int main()
 {
-int a, b, c, isscalene;
+int a,b,c, isscalene;
 a=input_side();
 b=input_side();
 c=input_side();

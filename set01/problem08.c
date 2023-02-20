@@ -53,3 +53,4 @@ int main()
   output(n, a,sum);
 return(0);
 }
+
