@@ -1,4 +1,4 @@
-#include<stdio.h>
+                                                                #include<stdio.h>
 int input();
 void add(int a, int b, int *sum);
 int output(int a, int b, int sum);

@@ -1,3 +1,4 @@
+3
 # Set 05
 
 1.  Write a program to find the distance between two points.
