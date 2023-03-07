@@ -9,6 +9,18 @@ printf("enter the number:");
 scanf("%d",&n);
 return n;
 }
+{
+  int n;
+  printf("enter the number:");
+  scanf("%d",&n);
+  return n;
+  int check_scalene(int a, int b, int c)
+  {
+    int isscalene=0;
+    if(a!=b && b!=c&&c!=a)
+      iss
+  }
+}
 int check_scalene(int a, int b, int c)
 {
 int isscalene=0;
