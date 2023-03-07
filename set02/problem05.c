@@ -35,3 +35,5 @@ void output( int a, int b, int gcd)
 printf("GCD(Greatest Common Divisor)/HCF(Highest Common Factor) of %d and %d is %d\n",a,b,gcd);
 }
 
+printf("GCD(Greatest Common Divisor")/HCF(Highest Common Factor)of %d and %d is %d\n",a,b,gcd);
+}
