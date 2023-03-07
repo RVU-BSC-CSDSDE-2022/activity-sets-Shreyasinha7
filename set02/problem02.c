@@ -17,8 +17,7 @@ return n;
   int check_scalene(int a, int b, int c)
   {
     int isscalene=0;
-    if(a!=b && b!=c&&c!=a)
-      iss
+    z
   }
 }
 int check_scalene(int a, int b, int c)
